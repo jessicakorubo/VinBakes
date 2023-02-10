@@ -1,0 +1,667 @@
+
+/* FOR BOTH MOBILE AND DESKTOP VERSION */
+
+@font-face {
+    font-family: Montserrat;
+    src: url(Fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing: content-box;
+}
+
+body {
+    /* background-color: rgb(245, 24, 61); */
+    overflow-x: hidden;
+}
+.logo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.navbar h3 {
+    font-size: 60px;
+}
+
+.heroLinks a {
+    text-decoration: none;
+    border: 1px dotted rgb(245, 58, 89);
+    color: white;
+    padding: 1.5rem 3rem;
+    margin-bottom: 2rem;
+    font-size: 18px;
+}
+.heroLinks a:first-of-type:hover{
+    background-color: rgb(245, 58, 89);
+}
+.heroLinks a:nth-of-type(2){
+    background-color: rgb(245, 58, 89);
+}
+.heroLinks a:nth-of-type(2):hover {
+    background-color: transparent;
+}
+.heroImage {
+    position: relative;
+    background-image: url(images/catering.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.heroContent {
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1;
+   
+}
+.heroImage::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity:0.4;
+    top: 0;
+    z-index: -1;
+    left: 0;
+}
+
+.herotext {
+    z-index:1;
+    font-size: 6rem;
+    margin-top: 5rem;
+    color: white;
+    font-family: 'Montserrat';
+}
+.herotext span {
+    color: rgb(245, 58, 89);
+}
+.navbar h3 {
+    font-size: 30px;
+}
+.menu ul {
+    margin-block-start:0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+.menu li {
+    list-style-type: none;
+    margin-top: 1.5rem;
+}
+.menu a {
+    font-size:28px;
+    color:white;
+    font-family:'Montserrat';
+    text-decoration: none;
+}
+.menu li a:hover {
+    text-decoration:double;
+    opacity: 0.3;
+    text-decoration-color: yellow;
+}
+.menu a span {
+    color:white;
+}
+.navbar h3 span {
+    /* color: rgb(223, 221, 221); */
+    font-family: 'Times New Roman', Times, serif;
+}
+.about {
+    animation: ease-in;
+    /* animation-duration: 2s;
+    animation-name: slidein; */
+    text-align: center;
+    background-color: whitesmoke;
+    padding:3rem 0;
+    
+}
+.about * {
+    margin-bottom: 2rem;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      margin-right: 100%;
+      width: 300%;
+    }
+  
+    75% {
+      font-size: 300%;
+      /* margin-right: 25%; */
+      /* width: 150%; */
+    }
+  
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+  }
+.services {
+    margin-top: 4rem;
+    text-align: center;
+}
+.service {
+    margin-bottom: 2rem;
+    /* margin-right: 2rem; */
+    overflow: hidden;
+    border-radius: 20px;
+    height: max-content;
+}
+#titles {
+    text-align: center;
+    font-size: 3rem;
+    /* margin-top: 4rem; */
+}
+.serviceText{
+    height: 100%;
+    /* flex-wrap: wrap; */
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    
+}
+.servicePics {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.servicePics img {
+    height: 180px;
+    width: 100%;
+    margin-bottom: 0;
+    object-fit: cover;
+}
+.gallery {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+.gallery h3 {
+    color:rgb(245, 24, 61);
+    text-align: center;
+    font-family: cursive;
+    font-size: 40px;
+}
+hr.horizontalRule {
+    text-align: center;
+    margin:1rem auto;
+    width: 3rem;
+    height: 3px;
+    background-color: black;
+}
+.galleryTitle {
+    margin-bottom: 1rem;
+}
+.galleryImage {
+    margin-right: 1rem;
+}
+.contactTitle {
+    display: flex;
+    justify-content: center;
+}
+.contact{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(248, 217, 220);
+    
+}
+.contact .book {
+    background-image: url(images/cake6.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    width: 70%;
+    margin:auto;
+    color: rgb(245, 58, 89);
+    padding-top: 15%;
+}
+
+.whatsappIcon img{
+    width: 60px;
+    /* border-radius: 50% 25% 10% 14%; */
+    border-radius: 25%;
+    background-color: transparent;
+    height: 60px;
+    object-fit: cover;
+    padding: 1rem 5rem;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name:whatsapp;
+}
+@keyframes whatsapp {
+    0% {
+        border: 1px solid rgb(245, 24, 61);
+        background-color: transparent;
+    }
+    25% {
+        border: 1px solid rgb(245, 24, 61);
+        background-color: rgb(245, 24, 61);
+    }
+    50% {
+        border: 1px solid rgb(245, 24, 61);
+        background-color: transparent;
+    }
+    75% {
+        border: 1px solid rgb(245, 24, 61);
+        background-color:rgb(245, 24, 61);
+    }
+    100% {
+        border: 1px solid rgb(245, 24, 61);
+        background-color: transparent;
+    }
+}
+.textUs h2{
+    font-size: 15px;
+}
+.contactDetails {
+    background-color: rgb(248, 217, 220);
+    padding: 2rem 0;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+.detail{
+    padding: 1rem 3rem;
+    text-align: center;
+    box-shadow:  23px 23px 27px 5px rgb(173, 20, 35);
+}
+.email a {
+    color: black;
+    text-decoration-color: black;
+}
+.end {
+    background-color: rgb(246, 93, 175);
+    padding: 2rem 2rem;
+}
+.end hr {
+    width: 90%;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+.end p span {
+    color:black;
+    fo
+}
+.end p {
+    color: white;
+    text-align: center;
+}
+footer {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.socialLinks img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+/* .socialLinks {
+    display: flex;
+    justify-content: flex-start;
+} */
+.socialLinks a {
+    text-decoration: none;
+}
+/* .quickLinks {
+    justify-content: flex-end;
+    display: flex;
+    list-style-type: none;
+} */
+
+.quickLinks a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+/* END OF BOTH MOBILE AND DESKTOP VERSION */
+
+/* FOR MOBILE SCREEN */
+@media screen and (min-width: 150px){
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .hero {
+        overflow: hidden;
+        margin: 0 1rem 1rem 1rem;
+    }
+    .heroContent {
+        display: flex;
+        flex-direction: column;
+    }
+    .herotext {
+        display: none;
+    }
+    .heroLinks a {
+        text-align: center;
+        padding: 1.5rem 5rem;
+    }
+    .heroLinks {
+        /* text-align: center;
+        align-content: center;
+        justify-content: center; */
+        display: flex;
+        width: fit-content;
+        /* padding-top: 4rem; */
+        margin-left: 3rem;
+        flex-direction: column;
+    }
+    .heroContent h2.logoName {
+        color: white;
+        margin-top: 30%;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        font-size: 4rem;
+    }
+    .header {
+        height: 20vh;
+        margin-bottom: 10rem;
+    }
+    .navbar{
+        text-align: center;
+        padding-left: 2rem;
+        position: absolute; 
+        top:0;
+        right:100%;
+        height: 100vh;
+        z-index: 2;
+        width: 60%;   
+        background-color: black;
+        transition: 2s ease right;
+        color: rgb(245, 24, 61);
+    }
+    
+    .navbar ul> img {
+        margin-top:1.3rem;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+    .navbar.active {
+        right:0;
+        transition: 2s ease right;
+    } 
+    .service {
+        width: 20rem;
+    }
+    #titles {
+        text-align: center;
+        font-size: 2rem;
+        /* margin-top: 4rem; */
+    }
+    .contact {
+        height:20rem;
+    }
+    .contact .book {
+        background-image: url(images/cake6.jpg);
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        width: 100%;
+        margin:auto;
+        color: rgb(245, 58, 89);
+        padding-top: 15%;
+    }
+    .contact .book h1 {
+        font-size: 30px;
+        margin-bottom: 2rem;
+    }
+    .galleryImage img {
+        border-radius: 20px;
+        width: 5rem;
+        height: 150px;
+        object-fit: cover;
+    }
+    .galleryPic {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y:hidden;
+        display: flex;
+        -webkit-overflow-scrolling: scroll;
+    }
+    .whatsappIcon img{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        padding: 0.5rem 2rem;
+        animation-duration: infinite;
+        animation-iteration-count: infinite;
+        animation-name: whatsapp;
+    }
+    .contact .book h1 {
+        font-size: 25px;
+        margin-bottom: 3rem;
+    }
+    .textUs h2{
+        font-size: 20px;
+    }
+    .detail {
+        margin-bottom: 2rem;
+    }
+    
+    footer {
+        justify-content: center;
+    }
+    .socialLinks {
+        display: flex;
+        margin-top: 5%;
+    }
+    .socialLinks img {
+        margin-right: 1rem;
+    }
+    .quickLinks ul{
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+    }
+}
+
+/* END OF MOBILE SCCREEN */
+
+
+/* MIDDLE OF MOBILE AND DESKTOP */
+@media screen and (min-width: 700px) {
+    .heroContent {
+        width: 90%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1;
+    }
+    .herotext {
+        display: block;
+        font-size: 2rem;
+        margin-top: 45%;
+        display: block;
+        margin-left: 2rem;
+    }
+    .heroLinks {
+        display: flex;
+        width: fit-content;
+        padding-top: 15rem;
+        margin-left: 3rem;
+        flex-direction: column;
+    }
+    .logoName{
+        display: none;
+    }
+    .header {
+        margin-bottom: 25rem;
+    }
+    .galleryImage img {
+        border-radius: 20px;
+        width: 15rem;
+        height: 300px;
+        object-fit: cover;
+    }
+    .galleryPic{
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto;
+        gap: 0.5rem;
+    }
+    .whatsappIcon img{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        padding: 0.5rem 2rem;
+        animation-duration:2s;
+        animation-iteration-count: infinite;
+        animation-name: whatsapp;
+    }
+}
+
+/* FOR DESKTOP SCREEN */
+@media screen and (min-width: 1000px) and (max-width: 2000px){
+    .navbar{
+        position: absolute; 
+        position: fixed;
+        top:0;
+        left:0;
+        height: 100vh;
+        width: 16%;
+        background-color: black;
+        color: rgb(245, 24, 61)
+    }
+    a#menuButton {
+        display: none;
+    }
+    .navbar h3 {
+        font-size: 36px;
+    }
+    .menu {
+        margin-top: 2rem;
+    }
+    .hero{
+        margin-left:19%;
+    }
+    .heroContent {
+        /* width: 90%; */
+        height: 100%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1;
+    }
+
+    .heroLinks {
+        display: flex;
+        width: fit-content;
+        /* padding-top: 9rem; */
+        margin-left: 3rem;
+        flex-direction: column;
+    }
+    .heroLinks a {
+        padding: 1.5rem 3rem;
+    }
+    .herotext {
+        display: block;
+        font-size: 2.9rem;
+        margin-top: 15%;
+        width: 70%;
+        margin-left: 2rem;
+    }
+    .logoName{
+        display: none;
+    }
+    .navbar ul> img {
+        display: none;
+    }
+    .header {
+        height: 80vh;
+        margin-bottom: 10rem;
+    }
+    .service {
+        width: 20rem;
+        margin-right: 2rem;
+    }
+    .contact {
+        height:30rem;
+    }
+    .contact .book h1 {
+        font-size: 60px;
+        margin-bottom: 3rem;
+    }
+    .galleryImage img {
+        border-radius: 20px;
+        width: 18rem;
+        height: 300px;
+        object-fit: cover;
+    }
+    .galleryPic{
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto;
+        gap: 0.5rem;
+    }
+    .galleryText {     
+        font-size: 30px;
+        animation-name: galleryText;
+        animation: galleryText 3s 1;
+    }
+    .gallery-animation {
+        animation: galleryText 3s 1;
+    }
+
+    @keyframes galleryText {
+        0% {
+            right: 100%;
+        }
+        50% {
+            right: 50%
+        }
+        100% {
+           right: 0;
+        }
+    }
+
+    .whatsappIcon img{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        padding: 1rem 4rem;
+        animation-iteration-count: infinite;
+        animation-duration: infinite;
+        animation-name: whatsapp;
+    }
+    footer {
+        justify-content: space-between;
+    }
+    .socialLinks {
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .socialLinks a {
+        margin-left: 0.5rem;
+    }
+    .quickLinks ul{
+        justify-content: flex-end;
+        display: flex;
+        list-style-type: none;
+        flex-direction: row;
+    }
+    
+}
+
+/* END OF DESKTOP SCREEN */
+
+
+
+
