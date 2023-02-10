@@ -342,7 +342,7 @@ footer {
     }
     .heroLinks a {
         text-align: center;
-        padding: 1.5rem 3rem;
+        padding: 1rem 3rem;
     }
     .heroLinks {
         /* text-align: center;
@@ -356,7 +356,7 @@ footer {
     }
     .heroContent h2.logoName {
         color: white;
-        margin-top: 30%;
+        margin-top: 20%;
         margin-bottom: 1.5rem;
         text-align: center;
         font-size: 3rem;
@@ -373,6 +373,8 @@ footer {
         right:100%;
         height: 100vh;
         z-index: 2;
+        overflow-x: hidden;
+        overflow-y: auto;
         width: 60%;   
         background-color: black;
         transition: 2s ease right;
@@ -463,13 +465,16 @@ footer {
         flex-direction: column;
         list-style-type: none;
     }
+    
 }
 
 /* END OF MOBILE SCCREEN */
 
 
+
+
 /* MIDDLE OF MOBILE AND DESKTOP */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) and (max-width:999px) {
     .heroContent {
         width: 90%;
         height: 100%;
@@ -522,8 +527,32 @@ footer {
         animation-iteration-count: infinite;
         animation-name: whatsapp;
     }
+    @media screen and (min-width: 350px){
+        @media screen and (max-height: 450px) {
+            .heroLinks {
+                display: flex;
+                width: fit-content;
+                padding-top: 2.4rem;
+                margin-left: 3rem;
+                flex-direction: column;
+            }
+            
+            .herotext {
+                display: block;
+                font-size: 2rem;
+                margin-top: 7%;
+                width: 70%;
+                margin-left: 2rem;
+            }
+        }
+        .navbar {
+            width: 30%;
+        }
+    }
+    
 }
 /* END OF MIDDLE */
+
 
 
 /* FOR  HEIGHT*/
@@ -564,7 +593,7 @@ footer {
     .heroLinks {
         display: flex;
         width: fit-content;
-        /* padding-top: 9rem; */
+        padding-top: 9rem;
         margin-left: 3rem;
         flex-direction: column;
     }
