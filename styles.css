@@ -9,6 +9,7 @@
     margin:0;
     padding:0;
     box-sizing: content-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
     object-fit: cover;
 }
 .navbar h3 {
-    font-size: 60px;
+    font-size: 30px;
 }
 
 .heroLinks a {
@@ -522,24 +523,29 @@ footer {
         animation-name: whatsapp;
     }
 }
+/* END OF MIDDLE */
+
+
+/* FOR  HEIGHT*/
+
+/* END OF MEDIA SCREEN FOR HEIGHT */
 
 /* FOR DESKTOP SCREEN */
 @media screen and (min-width: 1000px) and (max-width: 2000px){
     .navbar{
-        position: absolute; 
+        /* position: absolute;  */
         position: fixed;
+        overflow: auto;
         top:0;
         left:0;
         height: 100vh;
+        scroll-behavior: auto;
         width: 16%;
         background-color: black;
         color: rgb(245, 24, 61)
     }
     a#menuButton {
         display: none;
-    }
-    .navbar h3 {
-        font-size: 36px;
     }
     .menu {
         margin-top: 2rem;
@@ -655,6 +661,25 @@ footer {
         display: flex;
         list-style-type: none;
         flex-direction: row;
+    }
+
+    @media screen and (min-width: 900px){
+        @media screen and (max-height: 600px) {
+            .heroLinks {
+                display: flex;
+                width: fit-content;
+                padding-top: 5rem;
+                margin-left: 3rem;
+                flex-direction: column;
+            }
+            .herotext {
+                z-index:1;
+                font-size: 2rem;
+                margin-top: 2rem;
+                color: white;
+                font-family: 'Montserrat';
+            }
+        }
     }
     
 }
