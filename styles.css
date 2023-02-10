@@ -43,7 +43,7 @@ body {
 }
 .heroImage {
     position: relative;
-    background-image: url(images/catering.jpg);
+    background-image: url(images/catering.JPG);
     background-repeat: no-repeat;
     background-size:cover;
     height: 100vh;
@@ -212,7 +212,7 @@ hr.horizontalRule {
     
 }
 .contact .book {
-    background-image: url(images/cake6.jpg);
+    background-image: url(images/cake6.JPG);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -400,7 +400,7 @@ footer {
         height:20rem;
     }
     .contact .book {
-        background-image: url(images/cake6.jpg);
+        background-image: url(images/cake6.JPG);
         background-size: cover;
         background-position: center;
         text-align: center;
