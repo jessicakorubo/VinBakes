@@ -46,8 +46,7 @@
         <div class="header">
             <div class="video" id="video">
                 <video width="100%" height="100%" controls>
-                    <source src="mov_bbb.mp4" type="video/mp4">
-                    <source src="images/vinbakesVideo.mp4" type="video/mp4">
+                    <source src="mov_bbb.mp4" type="video/mp4">                <source src="images/vinbakesVideo.mp4" type="video/mp4">
                     Your browser does not support HTML video.
                   </video>
             </div>
@@ -55,15 +54,17 @@
         <div class="about" id="about">
             <h2 id="titles">About Us</h2>
             <hr class="horizontalRule">
-            <h3 id="catering">Catering to your appetite</h3>
-            <p>Hungry? Vin bakes has got you covered. Our secret ingredient for every recipe is love.
-                And our meals? We're sure you'll ❤️ it.
-                 We make tasty recipes that would leave you wanting more.
-            </p>
-            <h3 id="events">Event decorations</h3>
-            <p>We also are involved in event decorations. Have a reception you want to decorate?
-                Contact us and we'll love to come. 
-            </p>
+            <div class="aboutContent">
+                <h3 id="catering">Catering to your appetite</h3>
+                <p>Hungry? Vin bakes has got you covered. Our secret ingredient for every recipe is love.
+                    And our meals? We're sure you'll ❤️ it.
+                     We make tasty recipes that would leave you wanting more.
+                </p>
+                <h3 id="events">Event decorations</h3>
+                <p>We also are involved in event decorations. Have a reception you want to decorate?
+                    Contact us and we'll love to come.
+                </p>
+            </div>
         </div>
         <div class="services" id="services">
             <h2 id="titles">Our Services</h2>
@@ -158,38 +159,39 @@
             </div>
         </div>
 
-        <div class="contactTitle" id="contact">
-            <h1 id="titles">Contact Us</h1>
-        </div>
-        <hr class="horizontalRule">
-        <div class="contact">
-            
-            <div class="book">
-                <h1>READY.    SET.    ORDER.</h1>
-                <div class="textUs">
-                    <a href="https://api.whatsapp.com/send?phone=2348068571963" class="whatsappIcon">
-                        <img src="images/whatsapp.png" alt="">
-                    </a>
-                    <h2> Chat us on whatsapp</h2>
+        <div class="contactSection">
+            <div class="contactTitle" id="contact">
+                <h1 id="titles">Contact Us</h1>
+            </div>
+            <hr class="horizontalRule">
+            <div class="contact"> 
+                <div class="book">
+                    <h1>READY.    SET.    ORDER.</h1>
+                    <div class="textUs">
+                        <a href="https://api.whatsapp.com/send?phone=2348068571963" class="whatsappIcon">
+                            <img src="images/whatsapp.png" alt="">
+                        </a>
+                        <h2> Chat us on whatsapp</h2>
+                    </div>
                 </div>
-
+            </div>
+            <div class="contactDetails">
+                <div class="detail phone">
+                    <img src="images/phone-icon.png" alt="">
+                    <h2><a href="tel:+">+2348068571963</a></h2>
+                    <h2><a href="tel:+">+2349017772589</a></h2>
+                </div>
+                <div class="detail email">
+                    <img src="Images/email.png" alt="">
+                    <h2><a href="mailto:vinbakes.com">Vinbakes@gmail.com</a></h2>
+                </div>
+                <div class="detail address">
+                    <img src="images/address.png" alt="">
+                    <h2>Port-Harcourt</h2>
+                </div>
             </div>
         </div>
-        <div class="contactDetails">
-            <div class="detail phone">
-                <img src="images/phone-icon.png" alt="">
-                <h2>+2348068571963</h2>
-                <h2>+2349017772589</h2>
-            </div>
-            <div class="detail email">
-                <img src="Images/email.png" alt="">
-                <h2><a href="mailto:vinbakes.com">Vinbakes@gmail.com</a></h2>
-            </div>
-            <div class="detail address">
-                <img src="images/address.png" alt="">
-                <h2>Port-Harcourt</h2>
-            </div>
-        </div>
+        
         <div class="end">
             <footer class="footer">
                 <div class="socialLinks">
@@ -205,11 +207,11 @@
                 </div>
                 <div class="quickLinks">
                      <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Gallery</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
                      </ul>
                 </div>
                 

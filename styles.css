@@ -120,7 +120,7 @@ body {
     padding:3rem 0;
     
 }
-.about * {
+.aboutContent * {
     margin-bottom: 2rem;
     animation-duration: 2s;
     animation-name: slidein;
@@ -202,6 +202,7 @@ hr.horizontalRule {
     margin-right: 1rem;
 }
 .contactTitle {
+    padding-top: 2rem;
     display: flex;
     justify-content: center;
 }
@@ -209,7 +210,6 @@ hr.horizontalRule {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgb(248, 217, 220);
     
 }
 .contact .book {
@@ -259,25 +259,39 @@ hr.horizontalRule {
 }
 .textUs h2{
     font-size: 15px;
+    padding-bottom: 1rem;
+}
+.contactSection {
+    background-color: whitesmoke;
 }
 .contactDetails {
-    background-color: rgb(248, 217, 220);
     padding: 2rem 0;
     justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
 }
 .detail{
-    padding: 1rem 3rem;
+    color: rgb(245, 24, 61);
+    border-radius: 20px;
+    padding: 1rem 2rem;
     text-align: center;
-    box-shadow:  23px 23px 27px 5px rgb(173, 20, 35);
+    box-shadow: 2px  2px 2px 2px rgb(232, 136, 189);
+    transition: box-shadow 2.5s ;
+}
+.detail:hover {
+    transition: box-shadow .5s ease-in-out;
+    box-shadow: inset 3px 3px 17px 1px rgb(232, 136, 189);
 }
 .email a {
-    color: black;
-    text-decoration-color: black;
+    color: rgb(245, 24, 61);
+    text-decoration-color: rgb(245, 24, 61);
+}
+.phone a {
+    text-decoration: none;
+    color: rgb(245, 24, 61);
 }
 .end {
-    background-color: rgb(246, 93, 175);
+    background-color: rgb(56, 55, 55);
     padding: 2rem 2rem;
 }
 .end hr {
@@ -288,7 +302,7 @@ hr.horizontalRule {
     margin-bottom: 1rem;
 }
 .end p span {
-    color:black;
+    color:rgb(245, 58, 89);
 }
 .end p {
     color: white;
@@ -320,6 +334,10 @@ footer {
     margin-left: 1.5rem;
     text-decoration: none;
     color: white;
+    transition: color 1.5s;
+}
+.quickLinks a:hover {
+    color:rgb(232, 136, 189);
 }
 /* END OF BOTH MOBILE AND DESKTOP VERSION */
 
@@ -409,7 +427,7 @@ footer {
         text-align: center;
         width: 100%;
         margin:auto;
-        color: rgb(245, 58, 89);
+        color: white;
         padding-top: 15%;
     }
     .contact .book h1 {
@@ -418,7 +436,7 @@ footer {
     }
     .galleryImage img {
         border-radius: 20px;
-        width: 5rem;
+        width: 7rem;
         height: 150px;
         object-fit: cover;
     }
