@@ -27,40 +27,51 @@ body {
 .navbar h3 {
     font-size: 30px;
 }
+.background-video {
+    /* object-fit: cover; */
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
 
-.heroLinks a {
-    text-decoration: none;
-    border: 1px dotted rgb(245, 58, 89);
-    color: white;
-    padding: 1.5rem 3rem;
-    margin-bottom: 2rem;
-    font-size: 18px;
+@media (min-aspect-ratio: 16/9) {
+    .background-video {
+        height: 100%;
+        margin: auto;
+    }
+  }
+  
+  /* Maximum aspect ratio */
+  @media (max-aspect-ratio: 16/9) {
+    .background-video {
+     margin: auto;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+.header {
+    height: fit-content;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+    background-image: linear-gradient(rgba(32, 23, 23, 0.3), rgba(45,34,12,0.4))
 }
-.heroLinks a:first-of-type:hover{
-    background-color: rgb(245, 58, 89);
+.header-title h2{
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    /* padding: 3rem; */
+    font-size:2rem ;
 }
-.heroLinks a:nth-of-type(2){
-    background-color: rgb(245, 58, 89);
-}
-.heroLinks a:nth-of-type(2):hover {
-    background-color: transparent;
-}
-.heroImage {
+
+/* .heroImage {
     position: relative;
     background-image: url(images/catering.JPG);
     background-repeat: no-repeat;
     background-size:cover;
     height: 100vh;
-    position: relative;
     z-index: 1;
-}
-.heroContent {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 1;
-   
 }
 .heroImage::after{
     content: '';
@@ -72,18 +83,8 @@ body {
     top: 0;
     z-index: -1;
     left: 0;
-}
+} */
 
-.herotext {
-    z-index:1;
-    font-size: 6rem;
-    margin-top: 5rem;
-    color: white;
-    font-family: 'Montserrat';
-}
-.herotext span {
-    color: rgb(245, 58, 89);
-}
 .navbar h3 {
     font-size: 30px;
 }
@@ -157,9 +158,10 @@ body {
     height: max-content;
 }
 #titles{
-    color: rgb(245, 24, 61);
+    color: transparent;
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
+    -webkit-text-stroke: 0.2px rgb(245, 24, 61);
     /* margin-top: 4rem; */
 }
 .serviceText{
@@ -358,54 +360,14 @@ footer {
         width: 100%;
         overflow-x: hidden;
     }
-    .hero {
+    .main {
         overflow: hidden;
         margin: 0 1rem 1rem 1rem;
     }
-    .heroContent {
-        display: flex;
-        flex-direction: column;
-    }
-    .herotext {
-        display: none;
-    }
-    .heroLinks a {
-        text-align: center;
-        padding: 1rem 3rem;
-    }
-    .heroLinks {
-        /* text-align: center;
-        align-content: center;
-        justify-content: center; */
-        display: flex;
-        width: fit-content;
-        /* padding-top: 4rem; */
-        margin-left: 3rem;
-        flex-direction: column;
-    }
-    .heroContent h2.logoName {
-        color: white;
-        margin-top: 20%;
-        margin-bottom: 1.5rem;
-        text-align: center;
-        font-size: 3rem;
-    }
-    .videoheader {
-        display: flex;
-        width: max-content;
-        margin: auto;
-        margin-top: 3rem;
-    }
-    h2#videotitle {
-        font-size: 18px;
-        margin-right: 1.5rem;
-    }
-    
-    .video{
-        margin: auto;
-        margin-top: 1rem;
-        width:60%;
-        height:70%;
+
+    .header-title {
+        padding: 2.5rem;
+        font-size: 1.5rem;
     }
     .navbar{
         text-align: center;
@@ -524,25 +486,13 @@ footer {
         grid-template-columns: 40% 60%;
         grid-template-rows: 1;
     }
-    .herotext {
-        display: block;
+    .header-title {
+        text-align: center;
+        padding: 3rem;
         font-size: 2rem;
-        margin-top: 45%;
-        display: block;
-        margin-left: 2rem;
-    }
-    .heroLinks {
-        display: flex;
-        width: fit-content;
-        padding-top: 15rem;
-        margin-left: 3rem;
-        flex-direction: column;
     }
     .logoName{
         display: none;
-    }
-    .header {
-        margin-bottom: 25rem;
     }
     .galleryImage img {
         border-radius: 20px;
@@ -621,43 +571,29 @@ footer {
     .menu {
         margin-top: 2rem;
     }
-    .hero{
+    .main{
         margin-left:19%;
     }
     .heroContent {
         /* width: 90%; */
         height: 100%;
+        z-index: 1;
         display: grid;
         grid-template-columns: 40% 60%;
         grid-template-rows: 1;
     }
 
-    .heroLinks {
-        display: flex;
-        width: fit-content;
-        padding-top: 9rem;
-        margin-left: 3rem;
-        flex-direction: column;
+    .header-title {
+        text-align: center;
+        padding: 2rem;
+        font-size: 2rem;
     }
-    .heroLinks a {
-        padding: 1.5rem 3rem;
-    }
-    .herotext {
-        display: block;
-        font-size: 2.9rem;
-        margin-top: 15%;
-        width: 70%;
-        margin-left: 2rem;
-    }
+   
     .logoName{
         display: none;
     }
     .navbar ul> img {
         display: none;
-    }
-    .header {
-        height: 80vh;
-        margin-bottom: 10rem;
     }
     .service {
         width: 20rem;
