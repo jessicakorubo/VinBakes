@@ -364,7 +364,14 @@ footer {
         overflow: hidden;
         margin: 0 1rem 1rem 1rem;
     }
-
+    .header {
+        height: 50vh;
+        width: 100%;
+    }
+    .background-video {
+        height: 100%;
+        object-fit:scale-down;
+    }
     .header-title {
         display: none;
         padding: 2.5rem;
