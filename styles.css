@@ -366,6 +366,7 @@ footer {
     }
 
     .header-title {
+        display: none;
         padding: 2.5rem;
         font-size: 1.5rem;
     }
