@@ -54,7 +54,8 @@ body {
     width: 80%;
     margin: auto;
     margin-bottom: 3rem;
-    background: -webkit-linear-gradient(pink, rgba(233, 106, 178, 0.7));
+    /* background: -webkit-linear-gradient(#111111, rgba(233, 106, 178, 0.7)); */
+    background-color: #111111;
 }
 .header-title h2{
     color:white;
@@ -354,7 +355,7 @@ footer {
         width: 50px;
         height: 50px;
     }
-    img.hamburger {
+    .hamburger img{
         width: 50px;
         height: 50px;
     }
