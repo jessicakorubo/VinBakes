@@ -77,6 +77,13 @@ body {
     margin-block-end: 0;
     padding-inline-start: 0;
 }
+.logotitlenav {
+    color: rgb(245, 24, 61);
+    font-weight: 900;
+}
+.logotitlenav span {
+    font-family: 'Times New Roman', Times, serif;
+}
 .menu li {
     list-style-type: none;
     margin-top: 1.5rem;
@@ -356,20 +363,20 @@ footer {
         height: 50px;
     }
     .hamburger img{
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
     }
     .hamburger {
         cursor: pointer;
     }
     .mobile-navbar {
-        width: 100vw;
+        width: 90vw;
         display: flex;
         position: fixed;
         z-index: 1;
         align-items: center;
         padding: 1rem;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     /* .mobile-navbar * {
         display: inline-block;
@@ -379,7 +386,7 @@ footer {
         /* margin: ; */
     }
     .header {
-        height: 50vh;
+        height: 70vh;
         width: 100%;
     }
     .background-video {
@@ -397,7 +404,7 @@ footer {
         position: fixed; 
         top:0;
         right:100%;
-        height: 100vh;
+        height: 90vh;
         z-index: 2;
         overflow-x: hidden;
         overflow-y: auto;
@@ -541,21 +548,7 @@ footer {
     }
     @media screen and (min-width: 350px){
         @media screen and (max-height: 450px) {
-            .heroLinks {
-                display: flex;
-                width: fit-content;
-                padding-top: 2.4rem;
-                margin-left: 3rem;
-                flex-direction: column;
-            }
-            
-            .herotext {
-                display: block;
-                font-size: 2rem;
-                margin-top: 7%;
-                width: 70%;
-                margin-left: 2rem;
-            }
+           
         }
         .navbar {
             width: 30%;
@@ -705,20 +698,7 @@ footer {
 
     @media screen and (min-width: 900px){
         @media screen and (max-height: 600px) {
-            .heroLinks {
-                display: flex;
-                width: fit-content;
-                padding-top: 5rem;
-                margin-left: 3rem;
-                flex-direction: column;
-            }
-            .herotext {
-                z-index:1;
-                font-size: 2rem;
-                margin-top: 2rem;
-                color: white;
-                font-family: 'Montserrat';
-            }
+            
         }
     }
     
