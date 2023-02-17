@@ -19,10 +19,10 @@ const mobilenavbar = document.querySelector(".mobile-navbar");
 
 document.addEventListener('scroll', ()=>{
     var scrollPosition = window.scrollY;
-    if (scrollPosition > 180){
+    if (scrollPosition > 50){
         mobilenavbar.style.backgroundColor="black";
     }
-    else if (scrollPosition <180){
+    else if (scrollPosition <50){
         mobilenavbar.style.backgroundColor="transparent";
     }
 });
