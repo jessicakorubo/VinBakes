@@ -363,6 +363,7 @@ footer {
         height: 50px;
     }
     .hamburger img{
+        padding: 0 2rem 0 0;
         width: 30px;
         height: 30px;
     }
@@ -370,7 +371,7 @@ footer {
         cursor: pointer;
     }
     .mobile-navbar {
-        width: 90vw;
+        width: 100%;
         display: flex;
         position: fixed;
         z-index: 1;
