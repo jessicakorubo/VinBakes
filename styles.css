@@ -15,7 +15,7 @@ h1, h2, h3, h4 {
     font-family: 'Montserrat';
 }
 body {
-    /* background-color: rgb(245, 24, 61); */
+   
     overflow-x: hidden;
 }
 .logo img {
@@ -62,6 +62,11 @@ body {
     text-align: center;
     /* padding: 3rem; */
     font-size:2rem ;
+}
+.close {
+    cursor: pointer;
+    float: right;
+    padding: 1rem;
 }
 .navbar h3 {
     font-size: 30px;
@@ -136,11 +141,10 @@ body {
     height: max-content;
 }
 #titles{
-    color: transparent;
+    color: rgb(245, 24, 61);
     text-align: center;
     font-size: 5rem;
-    -webkit-text-stroke: 0.2px rgb(245, 24, 61);
-    /* margin-top: 4rem; */
+   
 }
 .serviceText{
     height: 100%;
@@ -347,20 +351,24 @@ footer {
         width: 50px;
         height: 50px;
     }
+    .hamburger {
+        cursor: pointer;
+    }
     .mobile-navbar {
-        width: 85%;
+        width: 100vw;
         display: flex;
         position: fixed;
+        z-index: 1;
         align-items: center;
         padding: 1rem;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     /* .mobile-navbar * {
         display: inline-block;
     } */
     .main {
         overflow: hidden;
-        margin: 0 1rem 1rem 1rem;
+        /* margin: ; */
     }
     .header {
         height: 50vh;
@@ -378,7 +386,7 @@ footer {
     .navbar{
         text-align: center;
         padding-left: 2rem;
-        position: absolute; 
+        position: fixed; 
         top:0;
         right:100%;
         height: 100vh;
