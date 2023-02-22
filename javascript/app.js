@@ -3,16 +3,24 @@ const hamburger = document.querySelector('.hamburger');
 // const hero = document.querySelector('.hero');
 const navbar = document.querySelector('.navbar');
 const close = document.querySelector('.close');
+const menuLink = document.querySelectorAll(".menu a")
 
 hamburger.addEventListener('click', ()=>{
     navbar.classList.add('active');
-    // hero.style.zIndex="-1";
 });
 
 close.addEventListener ('click', ()=>{
     navbar.classList.remove('active');
+    
 })
 
+//MAKING THE NAVBAR DISSAPEAR WHEN I CLICK ON IT
+disactivateNav = ()=> {
+    navbar.addEventListener('click', ()=>{ 
+    navbar.classList.remove('active');
+})
+};
+setTimeout(disactivateNav,2000);
 
 //changing the nav background color on scroll 
 const mobilenavbar = document.querySelector(".mobile-navbar");
