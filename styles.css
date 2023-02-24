@@ -243,7 +243,6 @@ hr#headerRule {
     /* background-position: center; */
     background-size: cover;
     background-attachment: fixed;
-    will-change: transform;
     display: flex;
     padding: 2rem 0 0 0;
     justify-content: space-around;
