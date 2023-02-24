@@ -37,7 +37,7 @@
     src: url(Fonts/Ubuntu/Ubuntu-Regular.ttf);
 }
 @font-face {
-    font-family: 'Shantell';
+    font-family: Shantell;
     src: url(Fonts/ShantellSans-VariableFont_BNCE\,INFM\,SPAC\,wght.ttf);
 }
 
@@ -214,6 +214,7 @@ hr#headerRule {
 }
 #titles{
     color: var(--light-pink);
+    font-family: 'BreeSerif';
     text-align: center;
     font-size: 5rem;
    
@@ -294,7 +295,7 @@ hr.horizontalRule {
 }
 .book h1 {
     font-family: cursive;
-    color: var(--dark-blue);
+    color: white;
 
 }
 .whatsappIcon img{
@@ -717,6 +718,7 @@ footer {
     }
     .contact .book h1 {
         font-size: 60px;
+        font-family: cursive;
         margin-bottom: 3rem;
     }
     .galleryImage img {
