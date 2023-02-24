@@ -58,9 +58,6 @@ body {
     height: 150px;
     object-fit: cover;
 }
-.navbar h3 {
-    font-size: 30px;
-}
 .background-video {
     height: 60%;
     width: 100%;
@@ -116,21 +113,17 @@ h2.logo span {
     font-size: 18px;
     margin-bottom: 4rem;
     height: max-content;
-    color: black;
+    color: var(--dark-blue);
     font-family:'Ubuntu';
     display: flex;
     flex-wrap: wrap;
 }
-/* .headerPic {
-    position: absolute;
-    top:0;
-    z-index: 1;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(Images/catering.jpg);
-    background-size: cover;
-} */
+hr#headerRule {
+    height: 2px;
+    background-color: var(--dark-blue);
+    color: var(--dark-blue);
+    box-shadow: var(--dark-blue);
+}
 .header-title h2{
     color:white;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -144,6 +137,7 @@ h2.logo span {
     padding: 1rem;
 }
 .navbar h3 {
+    color: var(--light-pink);
     font-size: 30px;
 }
 .menu ul {
@@ -151,13 +145,7 @@ h2.logo span {
     margin-block-end: 0;
     padding-inline-start: 0;
 }
-.logotitlenav {
-    color: var(--dark-pink);
-    font-weight: 900;
-}
-.logotitlenav span {
-    font-family: 'Times New Roman', Times, serif;
-}
+
 .menu li {
     list-style-type: none;
     margin-top: 1.5rem;
@@ -237,13 +225,13 @@ h2.logo span {
 }
 .serviceText p {
     font-family: 'Signika';
-    color: black;
-}
-.serviceText h2 {
     color: var(--dark-blue);
 }
+.serviceText h2 {
+    color: black;
+}
 .serviceText hr {
-    background-color: var(--dark-pink);
+    background-color: white;
     width: 7rem;
     height: 2px;
     color: var(--dark-pink);
@@ -305,7 +293,7 @@ hr.horizontalRule {
 }
 .book h1 {
     font-family: cursive;
-    color: rgb(239, 68, 96);
+    color: var(--dark-blue);
 
 }
 .whatsappIcon img{
@@ -324,23 +312,23 @@ hr.horizontalRule {
 }
 @keyframes whatsapp {
     0% {
-        border: 1px solid var(--dark-pink);
+        border: 1px solid var(--light-pink);
         background-color: transparent;
     }
     25% {
-        border: 1px solid var(--dark-pink);
-        background-color: var(--dark-pink);
+        border: 1px solid var(--light-pink);
+        background-color: var(--light-pink);
     }
     50% {
-        border: 1px solid var(--dark-pink);
+        border: 1px solid var(--light-pink);
         background-color: transparent;
     }
     75% {
-        border: 1px solid var(--dark-pink);
-        background-color:var(--dark-pink);
+        border: 1px solid var(--light-pink);
+        background-color:var(--light-pink);
     }
     100% {
-        border: 1px solid var(--dark-pink);
+        border: 1px solid var(--light-pink);
         background-color: transparent;
     }
 }
@@ -349,7 +337,7 @@ hr.horizontalRule {
     padding-bottom: 1rem;
 }
 .contactSection {
-    background-color: white;
+    background-color: var(--dark-blue);
 }
 .contactDetails {
     padding: 2rem 0;
@@ -363,13 +351,14 @@ hr.horizontalRule {
     border-radius: 20px;
     padding: 1rem 1rem;
     text-align: center;
-    box-shadow: 2px  2px 2px 2px rgb(232, 136, 189);
+    box-shadow: inset 3px 3px 17px 1px var(--light-pink);
+    
     transition: box-shadow 2.5s ;
 }
 
 .detail:hover {
     transition: box-shadow .5s ease-in-out;
-    box-shadow: inset 3px 3px 17px 1px rgb(232, 136, 189);
+    box-shadow: 2px  2px 2px 2px var(--baby-pink);
 }
 .email a {
     color: var(--bb4);
@@ -381,7 +370,7 @@ hr.horizontalRule {
 }
 .end {
     font-family: 'Signika';
-    background-color: var(--dark-blue);
+    background-color: var(--light-pink);
     padding: 2rem 2rem;
 }
 .end hr {
@@ -392,10 +381,10 @@ hr.horizontalRule {
     margin-bottom: 1rem;
 }
 .end p span {
-    color:rgb(245, 58, 89);
+    color: var(--dark-blue);
 }
 .end p {
-    color: white;
+    color: var(--dark-blue);
     text-align: center;
 }
 footer {
@@ -424,7 +413,7 @@ footer {
 .quickLinks a {
     margin-left: 1.5rem;
     text-decoration: none;
-    color: white;
+    color: var(--dark-blue);
     transition: color 1.5s;
 }
 .quickLinks a:hover {
@@ -457,15 +446,18 @@ footer {
         z-index: 1;
         align-items: center;
         padding: 1rem;
-        background-color: white;
+        background-color: var(--dark-blue);
         justify-content: space-between;
     }
-    /* .mobile-navbar * {
-        display: inline-block;
-    } */
+    .logotitlenav {
+        color: var(--light-pink);
+        font-weight: 900;
+    }
+    .logotitlenav span {
+        font-family: 'Times New Roman', Times, serif;
+    }
     .main {
         overflow: hidden;
-        /* margin: ; */
     }
     .header {
         height: fit-content;
@@ -538,8 +530,8 @@ footer {
     }
     .galleryImage img {
         border-radius: 20px;
-        width: 9rem;
-        height: 150px;
+        width: 12rem;
+        height: 200px;
         object-fit: cover;
     }
     .galleryPic {
@@ -643,6 +635,9 @@ footer {
             width: 30%;
         }
     }
+    span#slide {
+        display: none;
+    }
     
 }
 /* END OF MIDDLE */
@@ -664,8 +659,7 @@ footer {
         height: 100vh;
         scroll-behavior: auto;
         width: 16%;
-        background-color: black;
-        color: rgb(245, 24, 61);
+        background-color: var(--dark-blue);
     }
     .mobile-navbar {
         display: none;
@@ -705,7 +699,7 @@ footer {
         width: 100%;
     }
     video {
-        object-fit: fill;
+        object-fit: cover;
     }
     .logoName{
         display: none;
@@ -744,6 +738,9 @@ footer {
         font-size: 30px;
         animation-name: galleryText;
         animation: galleryText 3s 1;
+    }
+    span#slide {
+        display: none;
     }
     .gallery-animation {
         animation: galleryText 3s 1;
