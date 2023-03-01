@@ -539,6 +539,7 @@ footer {
     .galleryPic {
         width: 100%;
         padding: 1rem;
+        padding-right: 2rem;
         overflow-x: auto;
         overflow-y:hidden;
         display: flex;
